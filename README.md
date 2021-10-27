@@ -10,6 +10,7 @@ REACT_APP_IMGUR_CLIENTID={YOUR CLIENTID FROM IMGUR API}
 next is the endpoint where this project make the request
 REACT_APP_IMGUR_URL=https://api.imgur.com/3/gallery/
 
+finally install all dependencies using the command: npm install
 
 ## Available Scripts
 
