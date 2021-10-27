@@ -15,7 +15,5 @@ export default function ParticleBackground() {
       }}
       params={particlesConfig}
     />
-   
-   
   );
 }

@@ -1,9 +1,9 @@
 import React from "react";
 import ImageCard from "./ImageCard";
 
-const ImageList = ({ usersPost,setshowImageDetails }) => {
+const ImageList = ({ usersPost, setshowImageDetails }) => {
   if (!usersPost) return null;
- 
+
   return (
     <div className=" col-lg-8 p-5 row">
       {usersPost.map((userPost) =>
@@ -18,7 +18,6 @@ const ImageList = ({ usersPost,setshowImageDetails }) => {
               upvotes={userPost.ups}
               downvotes={userPost.downs}
               score={userPost.score}
-              
             />
           ) : null
         )

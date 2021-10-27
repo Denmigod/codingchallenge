@@ -1,3 +1,14 @@
+/*<-------------- General --------------> */
+
+.text{
+  font-family: 'Ubuntu', sans-serif;
+  color: #D9CAB3;
+ }
+
+ body{
+  margin: 0;
+  background-color: #2B4F60;
+}
 
 .btn-Control{
   position: relative;
@@ -8,79 +19,87 @@
   position: relative;
 }
 
-.formHead{
-    margin-top: 13%;
-}
 
-body{
-    background-color: #2B4F60;
-}
-.title{
-    padding-top: 10%;
-}
+
+
+/*<-------------- Title of the page --------------> */
 
 .jumbotron >.head{
-    font-family: 'Pacifico', cursive;
-    color: #EAD3CB;
-   
-   
+  font-family: 'Pacifico', cursive;
+  color: #EAD3CB;
 }
 
-.jumbotron >.responsable{
-    
-    text-align: right;
-   
+.jumbotron{
+  background-color: transparent;
 }
 
-.content{
-    position: absolute;
-    width: 90%;
-    top: 30px;
-    left: 20px;
-    color: white;
+.formHead{
+  margin-top: 13%;
 }
 
-.bg-card{
-    background-color: rgb(65, 73, 95);
-   
+
+
+
+/*<-------------- Form --------------> */
+
+form{
+  position: relative;
+}
+
+label{
+  color: #F6F6F6;
+  font-size: 2rem;
 }
 
 .form-Container{
-    background-color: #D9CAB3;
+  background-color: #D9CAB3;
 }
 
 
-.card{
-    background-color:#845460;
-   
-}
 
 
-.img-grid{
-    height:300px;
-    object-fit: cover;
-}
-
-
-.card-title{
-   font-size: 2rem;
-}
-
+/*<-------------- Image card grid --------------> */
 
 .descrip-grid{
-    font-size:1rem;
-    overflow:hidden;
-    white-space:nowrap;
-    text-overflow: ellipsis;
-    color: #F6F6F6;
+  font-size:1rem;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow: ellipsis;
+  color: #F6F6F6;
 }
+.card{
+  background-color:#845460;
+}
+
+.img-grid{
+  height:300px;
+  object-fit: cover;
+}
+
 .desc-empty{
   color: #c4c4c4;
 }
 
-.jumbotron{
-    background-color: transparent;
+
+
+
+/*<-------------- Big Image card  --------------> */
+
+.info{
+  color: #2B4F60;
+  font-weight: bolder;
 }
+
+.card-title{
+  font-size: 2rem;
+  font-weight: bolder;
+  color: #F6F6F6;
+}
+
+
+
+
+/*<-------------- Button --------------> */
 
 .btn{
   background-color:#845460 ;
@@ -91,12 +110,9 @@ body{
   width: auto;
 }
 
-label{
-  color: #F6F6F6;
-  font-size: 2rem;
-}
 
 
+/*<-------------- Spinner --------------> */
 
 .sk-chase {
   width: 40px;

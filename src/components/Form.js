@@ -4,6 +4,7 @@ import Dropdown from "./Dropdown";
 import Error from "./Error";
 
 const Form = ({ setSearch }) => {
+  
   const checkboxText = [
     "hot",
     "top",
@@ -74,7 +75,7 @@ const Form = ({ setSearch }) => {
     <Fragment>
       <form onSubmit={submitForm} className="mt-3">
         <div className="row">
-          <div className="form-group col-md-9">
+          <div className="form-group ">
             <input
               type="text"
               className="form-control form-control-lg"
@@ -82,11 +83,8 @@ const Form = ({ setSearch }) => {
               onChange={(e) => setTextSearch(e.target.value)}
             />
           </div>
-          <div className="col-md-2">
-            <input type="submit" className="btn btn-lg" value="Search" />
-          </div>
-        </div>
-
+          <div className=" mt-3">
+            <input type="submit" className="btn btn-lg me-5" value="Search" />
         <Dropdown
           updateCheckSection={updateCheckSection}
           section={section}
@@ -97,7 +95,8 @@ const Form = ({ setSearch }) => {
           updateCheckWindow={updateCheckWindow}
           updateCheckSort={updateCheckSort}
         />
-        <br />
+          </div>
+        </div> 
       </form>
       {error ? <Error message="Please write something to search" /> : null}
     </Fragment>
